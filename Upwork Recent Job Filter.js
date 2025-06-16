@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         Upwork Recent Job Filter
 // @namespace    http://tampermonkey.net/
-// @version      2.0
-// @description  Remove old Upwork jobs from results (not from today)
+// @version      2.1
+// @description  Remove Upwork jobs posted with weeks, days, yesterday, or months based on job-tile class and date parsing
 // @author       Adrian Mirea
 // @match        https://www.upwork.com/nx/jobs/search/*
 // @match        https://www.upwork.com/nx/search/jobs/*
@@ -29,8 +29,8 @@
             const text = dateElem.textContent.trim().toLowerCase();
             console.log('Job date text:', text); // Debug log
 
-            // Check for weeks, days, yesterday, or last month in text
-            const dayMatch = text.match(/(\d+\s+week|last\s+week)|(\d+\s+day)|yesterday|last\s+month/);
+            // Check for weeks, days, yesterday, or months in text
+            const dayMatch = text.match(/(\d+\s+week|last\s+week)|(\d+\s+day)|yesterday|(\d+\s+month|last\s+month)/);
             if (dayMatch) {
                 console.log('Removing job posted:', text);
                 card.remove();
