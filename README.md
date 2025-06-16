@@ -59,7 +59,7 @@ A Tampermonkey userscript that filters job listings on Upwork, keeping only rece
 - Report bugs or suggest features by creating an issue on GitHub.
 
 ## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License.
 
 ## Author
 - Adrian Mirea
