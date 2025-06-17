@@ -7,6 +7,8 @@
 // @match        https://www.upwork.com/nx/jobs/search/*
 // @match        https://www.upwork.com/nx/search/jobs/*
 // @grant        none
+// @updateURL    https://raw.githubusercontent.com/danadrianmirea/upwork-recent-filter/refs/heads/main/Upwork%20Recent%20Job%20Filter.js
+// @downloadURL  https://raw.githubusercontent.com/danadrianmirea/upwork-recent-filter/refs/heads/main/Upwork%20Recent%20Job%20Filter.js
 // ==/UserScript==
 
 (function () {
