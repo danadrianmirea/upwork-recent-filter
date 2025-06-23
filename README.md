@@ -63,7 +63,3 @@ This project is licensed under the MIT License.
 
 ## Author
 - Adrian Mirea
-
-## Acknowledgments
-- Built for freelancers looking to streamline their Upwork job search.
-- Powered by Tampermonkey for seamless browser integration.
